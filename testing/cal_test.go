@@ -2,6 +2,7 @@ package cal
 
 import (
     "testing"
+    "fmt"
 )
 
 func Test_Division_1(t *testing.T) {
@@ -41,6 +42,17 @@ func Benchmark_Division(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Division(4, 5)
 	}
+}
+
+//示例函數
+func ExampleDivision() {
+	i, _ := Division(6, 2)
+	x, _ := Division(12, 3)
+	fmt.Println(i)
+	fmt.Println(x)
+	// Output:
+	// 3
+	// 4
 }
 
 
