@@ -36,4 +36,11 @@ func Test_Division_table(t *testing.T) {
 		}
 	}
 }
+//壓力測試
+func Benchmark_Division(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Division(4, 5)
+	}
+}
+
 
