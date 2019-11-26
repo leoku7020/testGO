@@ -54,5 +54,9 @@ func ExampleDivision() {
 	// 3
 	// 4
 }
+//test command
+//go test -timeout 30s -run ^ExampleDivision
+//覆蓋率
+//$ go test -cover
 
 
