@@ -20,6 +20,8 @@ func main() {
         }
         close(c)
     }()
+    //test error
+    fmt.Println("test")
 
     for n := range c {
         fmt.Println(n)
