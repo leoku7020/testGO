@@ -6,6 +6,9 @@ on:
     branches:
       - master
       - main
+      - development
+      - testing
+      - staging
   pull_request:
 jobs:
   golangci:
